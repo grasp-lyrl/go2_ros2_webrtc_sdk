@@ -32,12 +32,12 @@ from aiortc import MediaStreamTrack
 from cv_bridge import CvBridge
 
 
-from scripts.go2_constants import ROBOT_CMD, RTC_TOPIC
-from scripts.go2_func import gen_command, gen_mov_command
-from scripts.go2_lidar_decoder import update_meshes_for_cloud2
-from scripts.go2_math import get_robot_joints
-from scripts.go2_camerainfo import load_camera_info
-from scripts.webrtc_driver import Go2Connection
+from scripts_go2.go2_constants import ROBOT_CMD, RTC_TOPIC
+from scripts_go2.go2_func import gen_command, gen_mov_command
+from scripts_go2.go2_lidar_decoder import update_meshes_for_cloud2
+from scripts_go2.go2_math import get_robot_joints
+from scripts_go2.go2_camerainfo import load_camera_info
+from scripts_go2.webrtc_driver import Go2Connection
 
 import rclpy
 from rclpy.node import Node
