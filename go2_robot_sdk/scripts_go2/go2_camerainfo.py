@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 def load_camera_info():
-    yaml_file = get_package_share_directory('go2_robot_sdk') + "/calibration/front_camera.yaml"
+    yaml_file = get_package_share_directory('what_changed') + "/calibration/front_camera.yaml"
 
     logger.info("Loading camera info from file: {}".format(yaml_file))
 
