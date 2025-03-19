@@ -58,8 +58,6 @@ def generate_launch_description():
     else:
         rviz_config = "multi_robot_conf.rviz"
 
-    if conn_type == 'cyclonedds':
-        rviz_config = "cyclonedds_config.rviz"
 
     urdf_file_name = 'multi_go2.urdf'
     urdf = os.path.join(
