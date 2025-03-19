@@ -36,7 +36,7 @@ def generate_launch_description():
     with_rviz2 = LaunchConfiguration('rviz2', default='true')
     with_nav2 = LaunchConfiguration('nav2', default='true')
     with_slam = LaunchConfiguration('slam', default='true')
-    with_foxglove = LaunchConfiguration('foxglove', default='true')
+    # with_foxglove = LaunchConfiguration('foxglove', default='true')
     with_joystick = LaunchConfiguration('joystick', default='true')
     with_teleop = LaunchConfiguration('teleop', default='true')
 
@@ -85,11 +85,11 @@ def generate_launch_description():
         get_package_share_directory('go2_robot_sdk'),
         'config', 'twist_mux.yaml')
 
-    foxglove_launch = os.path.join(
-        get_package_share_directory('foxglove_bridge'),
-        'launch',
-        'foxglove_bridge_launch.xml',
-    )
+    # foxglove_launch = os.path.join(
+    #     get_package_share_directory('foxglove_bridge'),
+    #     'launch',
+    #     'foxglove_bridge_launch.xml',
+    # )
 
     slam_toolbox_config = os.path.join(
         get_package_share_directory('go2_robot_sdk'),
@@ -218,10 +218,10 @@ def generate_launch_description():
             ],
         ),
 
-        IncludeLaunchDescription(
-            FrontendLaunchDescriptionSource(foxglove_launch),
-            condition=IfCondition(with_foxglove),
-        ),
+        # IncludeLaunchDescription(
+        #     FrontendLaunchDescriptionSource(foxglove_launch),
+        #     condition=IfCondition(with_foxglove),
+        # ),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
