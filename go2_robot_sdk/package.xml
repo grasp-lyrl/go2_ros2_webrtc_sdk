@@ -19,6 +19,7 @@
   <exec_depend>nav2_amcl</exec_depend>
   <exec_depend>nav2_bringup</exec_depend>
   <exec_depend>nav2_map_server</exec_depend>
+  <exec_depend>nav2_simple_commander</exec_depend>
   <exec_depend>nav2_util</exec_depend>
   <exec_depend>pointcloud_to_laserscan</exec_depend>
   

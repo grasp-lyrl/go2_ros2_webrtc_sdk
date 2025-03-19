@@ -56,6 +56,8 @@ setup(
         'console_scripts': [
             'go2_driver_node = go2_robot_sdk.go2_driver_node:main',
             'lidar_to_pointcloud = go2_robot_sdk.lidar_to_point:main',
+            'example_nav_through_poses = nav2_simple_commander.example_nav_through_poses:main',
+            'demo_security = nav2_simple_commander.demo_security:main',
         ],
     },
 )
